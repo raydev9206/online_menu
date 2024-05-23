@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const config = {
-  baseURL: 'https://publicatenestbe-production.up.railway.app/',
+  baseURL: import.meta.env.VITE_API_URL,
   timeout: 60 * 1000
 }
 
