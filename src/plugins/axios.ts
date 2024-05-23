@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const config = {
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL ?? 'https://publicate-nest-be.onrender.com/',
   timeout: 60 * 1000
 }
 

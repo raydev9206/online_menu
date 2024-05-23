@@ -36,8 +36,14 @@
           </TabsIndicator>
           <div v-for="(item, index) in categories" :key="index">
             <TabsTrigger :value="item.id">
-              <img v-if="activeTab == item.id" :src="`/icons/${item.icon}.svg`" />
-              <img v-else :src="`/icons/${item.icon}-no-active.svg`" />
+              <div v-if="item.icon">
+                <img v-if="activeTab == item.id" :src="`/icons/${item.icon}.svg`" />
+                <img v-else :src="`/icons/${item.icon}-no-active.svg`" />
+              </div>
+              <div v-else>
+                <img v-if="activeTab == item.id" :src="`/icons/drinks.svg`" />
+                <img v-else :src="`/icons/drinks-no-active.svg`" />
+              </div>
             </TabsTrigger>
           </div>
         </TabsList>
