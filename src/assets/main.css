@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*** Fonts ***/
+  html {
+    font-family: 'Roboto';
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    src:
+      local('Roboto'),
+      url(fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'RobotoItalic';
+    font-style: italic;
+    src:
+      local('RobotoItalic'),
+      url(fonts/Roboto/Roboto-Italic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'RobotoCondensed';
+    font-style: normal;
+    src:
+      local('condensed'),
+      url(fonts/RobotoCondensada/RobotoCondensed-Regular.ttf) format('truetype');
+  }
+}
